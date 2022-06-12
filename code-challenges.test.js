@@ -166,14 +166,6 @@ describe("code", () => {
         //             return newArr
         // }
         
-        // const arr = (array, letter) => {
-        //     let newArr = array.filter(value => {
-        //         if(value.includes(letter)){
-        //             return value
-        //         }
-        //     })
-        //     return newArr
-        // }
 
         const arr = (array, letter) => {
             let newArr = array.filter(value => {
@@ -190,12 +182,72 @@ describe("code", () => {
 
 // a) Create a test with expect statements using the variable provided.
 
-const hand1 = [5, 5, 5, 3, 3]
+        // create a describe it test that takes in an array and have the expect equal that array
+
+            describe("fh", () => {
+                it("takes in an array of 5 numbers and determines whether or not the array is a full house", () => {
+                    const hand1 = [5, 5, 5, 3, 3]
+                    const hand2 = [5, 5, 3, 3, 4]
+                    const hand3 = [5, 5, 5, 5, 4]
+                    expect(fh(hand1)).toEqual(true)
+                    expect(fh(hand2)).toEqual(false)
+                    expect(fh(hand3)).toEqual(false)
+                })
+            })
+
+        // I failed   
+        // ⁡⁢⁣⁢FAIL⁡  ./code-challenges.test.js
+        // code
+        //   ✓ takes in a string and returns a coded message (2 ms)
+        // arr
+        //   ✓ takes in an array of words and a single letter and returns all the words that contain that particular letter (6 ms)
+        // fh
+        //   ✕ takes in an array of 5 numbers and determines whether or not the array is a full house (3 ms)
+      
+        // ⁡⁢⁣⁢● ⁡fh › takes in an array of 5 numbers and determines whether or not the array is a full house
+      
+        //   ReferenceError: fh is not defined
+
+// const hand1 = [5, 5, 5, 3, 3]
 // Expected output: true
-const hand2 = [5, 5, 3, 3, 4]
+// const hand2 = [5, 5, 3, 3, 4]
 // Expected output: false
-const hand3 = [5, 5, 5, 5, 4]
+// const hand3 = [5, 5, 5, 5, 4]
 // Expected output: false
 
 
 // b) Create the function that makes the test pass.
+
+            // create a function called fh
+            // create a variable that sorts the array
+            // create a for loop that iterates through the array.
+            // if the array at index zero is same as array index 1 ⁡⁢⁢⁣AND array indx 2 is the same as index 3 and then 3 to 4
+            // new variable is true
+            // otherwise false
+            ⁡
+
+            const fh = (win) => {
+                let ray = win.sort()
+                for (let i =0; i < ray.length; i++){
+                    if(ray[0] === ray[1] && ray[2] === ray[3] && ray[3] === ray[4]){
+                        ray = true
+                    }else{
+                        ray = false
+                    }
+                } return ray
+            }
+
+        //     I passed
+        //     ⁡⁣⁢⁣PASS ⁡ ./code-challenges.test.js
+        //     code
+        //       ✓ takes in a string and returns a coded message (8 ms)
+        //     arr
+        //       ✓ takes in an array of words and a single letter and returns all the words that contain that particular letter
+        //     fh
+        //       ✓ takes in an array of 5 numbers and determines whether or not the array is a full house (1 ms)
+          
+        //   Test Suites: 1 passed, 1 total
+        //   Tests:       3 passed, 3 total
+        //   Snapshots:   0 total
+        //   Time:        0.473 s, estimated 1 s
+        //   Ran all test suites.
