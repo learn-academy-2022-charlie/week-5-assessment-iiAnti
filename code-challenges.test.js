@@ -140,9 +140,8 @@ describe("code", () => {
         // ["Mango", "Cherry", "Apricot", "Blueberry", "Peach"]
         // create a function called arr
         // the function will take in an array for the parameter as well as a string of a letter
-        // create a variable with an empty array
-        // create a for loop to iterate throught the array
-        // if the string includes the varible of we will push it into the empty array
+    //put the array in a filter and use the value of the array
+    // if the array lowercased is had has the letter of the passing argument, then the string is true and it is passed. 
         // output:["Apple", "Banana", "Orange"]
 //                 ["Cherry", "Blueberry", "Peach"]
 
@@ -221,10 +220,10 @@ describe("code", () => {
             // create a function called fh
             // create a variable that sorts the array
             // create a for loop that iterates through the array.
-            // if the array at index zero is same as array index 1 ⁡⁢⁢⁣AND array indx 2 is the same as index 3 and then 3 to 4
+            // if the array at index zero is same as array index 1 ⁡⁢⁢⁣AND ⁡⁢⁢⁢array indx 2 is the same as index 3 and then 3 to 4
             // new variable is true
-            // otherwise false
-            ⁡
+            // otherwise false⁡
+            
 
             const fh = (win) => {
                 let ray = win.sort()
