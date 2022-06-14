@@ -29,7 +29,12 @@ nums_array1 = [42, 7, 27]
 nums_array2 = [25, 17, 47, 11]
 # Expected output: 100
 
+def sum array
+    array.sum
+end
 
+p sum nums_array1
+p sum nums_array2
 
 # --------------------3a) Create a class called Bike that is initialized with a model, wheels, and current_speed. The default number of wheels is 2. The current_speed should start at 0. Create a bike_info method that returns a sentence with all the data from the bike object.
 
