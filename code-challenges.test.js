@@ -228,7 +228,7 @@ describe("code", () => {
             const fh = (win) => {
                 let ray = win.sort()
                 for (let i =0; i < ray.length; i++){
-                    if(ray[0] === ray[1] && ray[2] === ray[3] && ray[3] === ray[4]){
+                    if(ray[0] === ray[1] && ray[2] === ray[3] && ray[3] === ray[4] || ray[0] === ray[1] && ray[1] === ray[2] && ray[3] === ray[4]){
                         ray = true
                     }else{
                         ray = false
